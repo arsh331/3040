@@ -19,13 +19,17 @@ Guide on formatting and hosting your resume on GitHub Pages using static site ge
 
     3. Navigate to Build and deployment, select Deploy from branch as the source and the desired branch (main is the default branch) and click save. 
 
-After completing the above steps you should have a GitHub pages website up and running within a few minutes. You can navigate to your website by clicking Visit site button on Settings > Pages page. 
+    After completing the above steps you should have a GitHub pages website up and running within a few minutes. You can navigate to your website by clicking Visit site button on Settings > Pages page. 
 
 2. ### Configuring the static site generator
-    You should have Jekyll conf 
 
-    1. Install Jekyll on your operating system of choice.
-    2. 
+    1. Go to the Settings > Page on your repository.
+    
+    2. Select add a Jekyll theme on the page.
+
+    3. Select your desired theme by editing the _config.yml file using the above guide.
+
+At the end of this step, you should see the changes on your website.
 
 
 
@@ -37,10 +41,16 @@ After completing the above steps you should have a GitHub pages website up and r
 
 3. [Windows CMD Cheatsheet](https://www.digitalcitizen.life/command-prompt-how-use-basic-commands/): Tutorial features common CMD commands useful for following along with this README.
 
+
 ## FAQs
 
 1. What is the default address of the Jekyll site?
-    >Answer: You can access your jekyll site after the serve command at http://localhost:4000.
+
+    Answer: You can access your jekyll site after the serve command at http://localhost:4000.
 
 2. Why is my website not showing up on the GitHub Pages page?
-    >Answer: In case you cannot see your website, go to Actions page on your repo. It should show your website under All workflows 
+
+    Answer: In case you cannot see your website, go to Actions page on your repo. It should show your website under All workflows wait until the build is complete (a green mark is displayed) and try again.
+
+## Authors
+Arshdep Singh
