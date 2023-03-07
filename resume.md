@@ -5,6 +5,7 @@ Winnipeg, Manitoba | (431)997-9992
 [Online Portfolio](www.arsh331.github.io/portfolio/)
 
 ## Education
+---
 **University of Manitoba**, Winnipeg  
 **B.Sc.** Major in **Computer Science**, 01/2020 - **04/2024** (Expected)  
 Relevant Coursework:  
