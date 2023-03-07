@@ -11,7 +11,7 @@ Guide on formatting and hosting your resume on GitHub Pages using static site ge
 
 ## Instructions
 
-* ### Setting up the GitHub repository
+1. ### Setting up the GitHub repository
 
     1. Create a new repository on your GitHub account.
 
@@ -21,9 +21,11 @@ Guide on formatting and hosting your resume on GitHub Pages using static site ge
 
 After completing the above steps you should have a GitHub pages website up and running within a few minutes. You can navigate to your website by clicking Visit site button on Settings > Pages page. 
 
-* ### Configuring the static site generator
+2. ### Configuring the static site generator
+    You should have Jekyll conf 
 
-    1. Install Jekyll on your operating system of choice 
+    1. Install Jekyll on your operating system of choice.
+    2. 
 
 
 
@@ -38,6 +40,7 @@ After completing the above steps you should have a GitHub pages website up and r
 ## FAQs
 
 1. What is the default address of the Jekyll site?
-Ans. You can access your jekyll site after the serve command at ```http://localhost:4000 ```
+    >Answer: You can access your jekyll site after the serve command at http://localhost:4000.
 
-2. 
+2. Why is my website not showing up on the GitHub Pages page?
+    >Answer: In case you cannot see your website, go to Actions page on your repo. It should show your website under All workflows 
