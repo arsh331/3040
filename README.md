@@ -7,7 +7,37 @@ Guide on formatting and hosting your resume on GitHub Pages using static site ge
 * A resume formatted in Markdown
 * Jekyll 
 * GitHub account
+* Windows operating system
 
 ## Instructions
 
-1. Create a new repository on your GitHub account.
+* ### Setting up the GitHub repository
+
+    1. Create a new repository on your GitHub account.
+
+    2. Go to Settings > Pages page for your repository.
+
+    3. Navigate to Build and deployment, select Deploy from branch as the source and the desired branch (main is the default branch) and click save. 
+
+After completing the above steps you should have a GitHub pages website up and running within a few minutes. You can navigate to your website by clicking Visit site button on Settings > Pages page. 
+
+* ### Configuring the static site generator
+
+    1. Install Jekyll on your operating system of choice 
+
+
+
+## More resources
+
+1. [Markdown Tutorial](https://www.markdowntutorial.com/): An easy-to-follow tutorial for learning markdown.
+
+2. [Jekyll Installation](https://jekyllrb.com/docs/installation/): Website features Jekyll installation for a variety of operating systems like macOS, Ubuntu and Windows.
+
+3. [Windows CMD Cheatsheet](https://www.digitalcitizen.life/command-prompt-how-use-basic-commands/): Tutorial features common CMD commands useful for following along with this README.
+
+## FAQs
+
+1. What is the default address of the Jekyll site?
+Ans. You can access your jekyll site after the serve command at ```http://localhost:4000 ```
+
+2. 
