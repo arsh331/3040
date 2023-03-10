@@ -81,7 +81,7 @@ GitHub's build tools work very well until they do not. Even in the best-case Git
 
     4. Execute the command below. 
         ``` console 
-        Jekyll serve
+        jekyll serve
         ```
     5. The website will be available at http://localhost:4000 on your machine.
 
