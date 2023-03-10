@@ -5,19 +5,19 @@ This guide aims to provide a quick start in the field of technical writing for b
 ## Discussion of Etter's recommendations
 
 * ### Usage of lightweight markup languages
-    Etter's book dedicates a large chunk to the discussion of using lightweight markup languages like markdown for technical writing. The idea behind the concept is simple, usage of languages like markdown strips down the unnecessary complications of working with markup languages to help invest greater time in polishing the content. Moreover, markdown is a better for readability and does not even require knowledge of the syntax to make minor changes.  
+    Etter's book dedicates a large chunk of the book to the discussion of lightweight markup languages like markdown for technical writing. The idea behind the concept is simple, languages like markdown strip down the unnecessary complications related to working with markup languages like XML, HTML etc. to help the writer invest a greater time in polishing the content. Moreover, markdown is better for readability and does not even require knowledge of the syntax to make minor changes.  
 
-* ### Hosting documents on a distributed version control system
-    Etter's book highlights the importance of using a version control system like Git. It provides many benefits like providing a permanent storage space for your projects and documentation. It makes the process of tracking changes easy by allowing for multiple restore points and also the ability to create branches for experimenting with new features. Most importantly it fosters collaboration among developers and stakeholders. Etter highlights the importance of communication between the stakeholders to deliver a better experience for the end user. Moreover, the colloboration ensures the documentation remains up to date and relevant for the end users and new errors and problems are added as they spring along the way. 
+* ### Hosting documentation on a distributed version control system
+    Etter's book highlights the importance of using a version control system like Git. It provides many benefits like providing a permanent storage space for your projects and documentations. It makes the process of tracking changes easy by allowing for multiple restore points and also the ability to create branches for experimenting with new features. Most importantly, it fosters collaboration among developers and other stakeholders. Etter highlights the importance of invlovement between the stakeholders to deliver a better experience for the end user. Moreover, such colloborations ensure the documentation remains up to date and relevant for the end users. As it creates a more open environment  documentation for new errors and problems might be added as they spring along the way. 
 
 * ### Using static site generators.
-    An important idea at the core of Etter's book is the simplification of process of technical writing to reduce the focus on building technologies to support the documentation and instead invest more time in perfecting the content. The idea is evident across the book as Etter recommends using simplified tools like markdown to further the idea. Similarly, instead of using complex hosting technologies and content management systems, Etter suggests the use of static site generator to build and host technical documentation. 
+    An important idea at the core of Etter's book is the simplification of the process of technical writing, to reduce the focus on building technologies to support the documentation and instead invest more time in perfecting the content. The idea is evident across the book as Etter recommends using simplified tools like markdown over traditional solutions. Similarly, instead of using complex hosting technologies and content management systems, Etter suggests the use of static site generator to build and host technical documentation.  
 
-    Popular static site generators (SSG) like Jekyll is a popular choice for writing technical documentation. Jekyll is an open source static site generator based on Ruby and provides an excellent starting point for beginners. 
+    Popular static site generators (SSG) like Jekyll is a popular choice for writing technical documentation. Jekyll is an open source static site generator based on Ruby and provides an excellent starting point for beginners. Static site generators reduce the headache of the developers to maintain complex client and server processes to host websites and instead provide a streamlined way for hosting websites for technical documentation.
 
-GitHub fits the bill perfectly for building technical documentation. It is based on the popular distributed version control system Git at the heart and has in built integration with Jekyll which highly simplifies the generation process. Moreover, it handles the entire site generation process without requiring users to have a deep knowledge of static site generators. At the same it offers experienced users the freedom to configure the site to their needs. Lastly, it also provides a free website to host the content on and is a perfect solution. 
+GitHub fits the bill perfectly for building technical documentation. It is based on the popular distributed version control system Git at it's heart and has in built integration with Jekyll which highly simplifies the site generation process. At the same it also offers experienced users the freedom to configure the site to their needs. Lastly, it also provides a free website to host the content on.
 
-Therefore, the guide will focus on using GitHub as a solution to host a resume written in markdown using the GitHub pages feature and demonstrate the principles at the heart of Etter's book.
+Therefore, the guide will focus on using GitHub as a solution to host a resume written in markdown using the GitHub Pages feature and in line with the principles at the heart of Etter's book.
 
 ## Instructions on hosting the resume
 
@@ -69,7 +69,7 @@ Therefore, the guide will focus on using GitHub as a solution to host a resume w
     >remote_theme: sharu725/online-cv
     >```
 
-GitHub's build tools work very well until they do not. Even in the best-case GitHub's site takes several minutes to show changes which may not be a big problem if you do not intend to make many changes on the website. However, the whole process starts to slow down the development time and in case GitHub's server is overwhelmed it can take significantly more time to complete the process. Therefore, setting up the process on a local machine makes the changes show up instantly and offers a closer look at the processes which work inside the Jekyll website generation. 
+GitHub's build tools work very well until they do not. Even in the best-case GitHub's site takes several minutes to show the changes, which may not be a big problem if you do not intend to make many changes on the website. However, the whole process starts to slow down the development time and in case GitHub's server is overwhelmed it can take significantly more time to complete the process. Therefore, setting up the process on a local machine makes the changes show up instantly and also offers a closer look at the processes which work inside the Jekyll website generation. 
 
 3. ### Setting up Jekyll for local development
   
@@ -77,18 +77,17 @@ GitHub's build tools work very well until they do not. Even in the best-case Git
 
     2. Clone the GitHub repository to your local machine.
 
-    3. Open a CMD on your machine and cd inside the directory where the repository is located.
+    3. Open a CMD on your machine and change directory to where the repository is located.
 
     4. Execute the command below. 
         ``` console 
-        Jekyll serve
+        jekyll serve
         ```
-    5. The website will be available at http://localhost:4000 on your machine.
+    5. The website will be available at http://localhost:4000 on your browser.
 
-At the end of this step, you should see the changes on your website. Here is a screenshot of a website generated using this guide. It can also be accessed at https://arsh331.github.io/.
+At the end of these steps, you should have your own resume hosted on GitHub Pages. Here is a screenshot of a website generated using this guide. It can also be accessed at https://arsh331.github.io/.
 
 ![Resume](resume.gif)
-
 
 ## More resources
 
