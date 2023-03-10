@@ -3,7 +3,7 @@
 This guide aims to provide a quickstart in the field of technical writing for beginners. It employs various techniques mentioned in Andrew Etter's book Modern Technical writing. The content is split into two parts: first part of the guide focuses on explaining Etter's recommendations for technical writers. While the latter offers concrete implementation of Etter's principles by providing instructions on hosting a resume on GitHub Pages using Static site generators like Jekyll.
 
 ## Discussion of Etter's reccomendations
----
+
 * ### 
 * ### Hosting documents on a distributed version control system
     Etter's book highlights the importance of using a version control system like Git. It provides many benefits like providing a permanent storage space for your projects and documentation. It makes the process of tracking changes easy by allowing for mulitple restore points and also the ability to create branches for experimenting with new features. Most importantly it fosters colloboration among developers and stakeholders. Etter highlights the importance of communication between the stakeholders to deliver a better experience for the end user. Moreover, the colloboration ensures the documentation remains up to date and relevant for the end users and new errors and problems are added as they spring along the way. 
@@ -57,9 +57,7 @@ Therefore, the guide will focus on using GitHub as a solution to host a resume u
 GitHub's build tools work very well until they do not. Even in the best case the GitHub's site takes several minutes to show changes which may not be a big problem if you do not intend to make many changes in the website. However, the whole process starts to slow down the development time and in case GitHub's server are overwhelmed it can take siginificantly more time to complete the process. Therefore, setting up the process on a local machine makes the changes show up instantly and also offers a closer look at the processes which work inside the Jekyll website generation. 
 
 3. ### Setting up Jekyll for local development
-
-
-    
+   
     1. Make sure your system has the latest version of Jekyll installed. Refer to this [guide](https://jekyllrb.com/docs/installation/windows/) for windows installation.
 
     2. Clone the GitHub repository to your local machine.
@@ -72,7 +70,7 @@ GitHub's build tools work very well until they do not. Even in the best case the
         ```
     5. The website will be available at  http://localhost:4000 on your machine.
 
-At the end of this step, you should see the changes on your website.
+At the end of this step, you should see the changes on your website. Here is a screenshot of a sample website generated using this guide.![Resume](resume.gif)
 
 
 
