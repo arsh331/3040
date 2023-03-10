@@ -86,6 +86,7 @@ GitHub's build tools work very well until they do not. Even in the best-case Git
     5. The website will be available at http://localhost:4000 on your machine.
 
 At the end of this step, you should see the changes on your website. Here is a screenshot of a website generated using this guide. It can also be accessed at https://arsh331.github.io/.
+
 ![Resume](resume.gif)
 
 
