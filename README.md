@@ -70,9 +70,9 @@ GitHub's build tools work very well until they do not. Even in the best case the
         ```
     5. The website will be available at  http://localhost:4000 on your machine.
 
-At the end of this step, you should see the changes on your website. Here is a screenshot of a sample website generated using this guide.![Resume](resume.gif)
+At the end of this step, you should see the changes on your website. Here is a screenshot of a sample website generated using this guide.
 
-
+![Resume](resume.gif)
 
 ## More resources
 
@@ -91,7 +91,7 @@ At the end of this step, you should see the changes on your website. Here is a s
 
 2. Why is my website not showing up on the GitHub Pages page?
 
-    Answer: In case you cannot see your website, go to Actions page on your repo. It should show your website under All workflows wait until the build is complete (a green mark is displayed) and try again.
+    Answer: In case you cannot see your website, go to Actions page on your repo. It should show your website under All workflows wait until the build is complete (a       green mark is displayed) and try again.
 
 ## Authors and Acknoledgements
 Author: Arshdep Singh
