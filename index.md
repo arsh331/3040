@@ -1,8 +1,12 @@
+---
+layout: default
+title: Resume
+---
 # Arshdeep Singh Sahota
 ---
 Winnipeg, Manitoba | (431)997-9992  
-[Email](mailto:sahotaa1@myumanitoba.ca) | [LinkedIn](www.linkedin.com/in/arsh331/)  
-[Online Portfolio](www.arsh331.github.io/portfolio/)
+[Email](mailto:sahotaa1@myumanitoba.ca){:target="_blank"} | [LinkedIn](www.linkedin.com/in/arsh331/){:target="_blank"}  
+[Online Portfolio](https://www.arsh331.github.io/portfolio/){:target="_blank"}
 
 ## Education
 ---
