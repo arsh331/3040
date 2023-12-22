@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Oswald:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c73a089fd4.js" crossorigin="anonymous"></script>
+</head>
+<body class="about">
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h2>
+          AS&nbsp
+        </h2>
+        <i class="fa-solid fa-file-lines fa-2xl"></i>
+      </div>
+      <ul>
+        <li><a href="/">Resume</a></li>
+        <li><a href="/how-to">How to</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1 id="hosting-a-resume-with-github-pages">Hosting a resume with GitHub Pages</h1>
+<hr />
+<p>This guide aims to provide a quick start in the field of technical writing for beginners. It employs various techniques mentioned in Andrew Etter’s book Modern Technical writing. The content is split into two parts: the first part of the guide focuses on explaining Etter’s recommendations for technical writers. While the latter offers concrete implementation of Etter’s principles by providing instructions on hosting a resume on GitHub Pages using Static site generators like Jekyll.</p>
+
+<h2 id="discussion-of-etters-recommendations">Discussion of Etter’s recommendations</h2>
+<hr />
+<ul>
+  <li>
+    <h3 id="usage-of-lightweight-markup-languages">Usage of lightweight markup languages</h3>
+    <p>Etter’s book dedicates a large chunk of the book to the discussion of lightweight markup languages like markdown for technical writing. The idea behind the concept is simple, languages like markdown strip down the unnecessary complications related to working with markup languages like XML, HTML etc. to help the writer invest a greater time in polishing the content. Moreover, markdown is better for readability and does not even require knowledge of the syntax to make minor changes.</p>
+  </li>
+  <li>
+    <h3 id="hosting-documentation-on-a-distributed-version-control-system">Hosting documentation on a distributed version control system</h3>
+    <p>Etter’s book highlights the importance of using a version control system like Git. It provides many benefits like providing a permanent storage space for your projects and documentations. It makes the process of tracking changes easy by allowing for multiple restore points and also the ability to create branches for experimenting with new features. Most importantly, it fosters collaboration among developers and other stakeholders. Etter highlights the importance of invlovement between the stakeholders to deliver a better experience for the end user. Moreover, such colloborations ensure the documentation remains up to date and relevant for the end users. As it creates a more open environment  documentation for new errors and problems might be added as they spring along the way.</p>
+  </li>
+  <li>
+    <h3 id="using-static-site-generators">Using static site generators.</h3>
+    <p>An important idea at the core of Etter’s book is the simplification of the process of technical writing, to reduce the focus on building technologies to support the documentation and instead invest more time in perfecting the content. The idea is evident across the book as Etter recommends using simplified tools like markdown over traditional solutions. Similarly, instead of using complex hosting technologies and content management systems, Etter suggests the use of static site generator to build and host technical documentation.</p>
+
+    <p>Popular static site generators (SSG) like Jekyll is a popular choice for writing technical documentation. Jekyll is an open source static site generator based on Ruby and provides an excellent starting point for beginners. Static site generators reduce the headache of the developers to maintain complex client and server processes to host websites and instead provide a streamlined way for hosting websites for technical documentation.</p>
+  </li>
+</ul>
+
+<p>GitHub fits the bill perfectly for building technical documentation. It is based on the popular distributed version control system Git at it’s heart and has in built integration with Jekyll which highly simplifies the site generation process. At the same it also offers experienced users the freedom to configure the site to their needs. Lastly, it also provides a free website to host the content on.</p>
+
+<p>Therefore, the guide will focus on using GitHub as a solution to host a resume written in markdown using the GitHub Pages feature and in line with the principles at the heart of Etter’s book.</p>
+
+<h2 id="instructions-on-hosting-the-resume">Instructions on hosting the resume</h2>
+<hr />
+<h3 id="prerequisites">Prerequisites</h3>
+<ul>
+  <li>Windows operating system</li>
+  <li>Markdown editor like Visual Studio Code</li>
+  <li>A resume formatted in Markdown</li>
+  <li>Jekyll</li>
+  <li>GitHub account</li>
+</ul>
+
+<h3 id="steps">Steps</h3>
+
+<ol>
+  <li>
+    <h3 id="setting-up-the-github-repository">Setting up the GitHub repository</h3>
+
+    <ol>
+      <li>
+        <p>Create a new repository on your GitHub account.</p>
+      </li>
+      <li>
+        <p>Upload your resume as a markdown file and rename it to index.md.</p>
+      </li>
+      <li>
+        <p>Go to Settings &gt; Pages page for your repository.</p>
+      </li>
+      <li>
+        <p>Navigate to Build and deployment.</p>
+      </li>
+      <li>
+        <p>Select Deploy from branch as the source and the desired branch (main is the default branch) and click save.</p>
+      </li>
+    </ol>
+
+    <p>After completing the above steps, you should have the GitHub pages website up and running within a few minutes. You can navigate to your website by clicking Visit site button on Settings &gt; Pages page.</p>
+  </li>
+  <li>
+    <h3 id="configuring-the-static-site-generator">Configuring the static site generator</h3>
+
+    <ol>
+      <li>
+        <p>Select a Jekyll theme you want to use for your resume, GitHub has list of <a href="https://pages.github.com/themes/">supported themes</a> to select from.</p>
+      </li>
+      <li>
+        <p>Create a _config.yml file in your GitHub repository.</p>
+      </li>
+      <li>Add this line to the config file,
+        <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go"> theme: [theme-name]
+</span></code></pre></div>        </div>
+        <p>For example,</p>
+        <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go"> theme: minima
+</span></code></pre></div>        </div>
+      </li>
+      <li>Wait for GitHub to build the edited site and you should see the updated site with the theme applied.</li>
+    </ol>
+
+    <blockquote>
+      <p>Tip: <a href="https://github.com/topics/jekyll-theme">Remote themes</a> available on GitHub can    also be added to the project using,</p>
+      <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">remote_theme: [user-name]/[repo]
+</span></code></pre></div>      </div>
+      <p>For example,</p>
+      <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">remote_theme: sharu725/online-cv
+</span></code></pre></div>      </div>
+    </blockquote>
+  </li>
+</ol>
+
+<p>GitHub’s build tools work very well until they do not. Even in the best-case GitHub’s site takes several minutes to show the changes, which may not be a big problem if you do not intend to make many changes on the website. However, the whole process starts to slow down the development time and in case GitHub’s server is overwhelmed it can take significantly more time to complete the process. Therefore, setting up the process on a local machine makes the changes show up instantly and also offers a closer look at the processes which work inside the Jekyll website generation.</p>
+
+<ol>
+  <li>
+    <h3 id="setting-up-jekyll-for-local-development">Setting up Jekyll for local development</h3>
+
+    <ol>
+      <li>
+        <p>Make sure your system has the latest version of Jekyll installed. Refer to this <a href="https://jekyllrb.com/docs/installation/windows/">guide</a> for windows installation.</p>
+      </li>
+      <li>
+        <p>Clone the GitHub repository to your local machine.</p>
+      </li>
+      <li>
+        <p>Open a CMD on your machine and change directory to where the repository is located.</p>
+      </li>
+      <li>Execute the command below.
+        <div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go"> jekyll serve
+</span></code></pre></div>        </div>
+      </li>
+      <li>The website will be available at http://localhost:4000 on your browser.</li>
+    </ol>
+  </li>
+</ol>
+
+<p>At the end of these steps, you should have your own resume hosted on GitHub Pages. You can access my resume at https://arsh331.github.io/resume.</p>
+
+<h2 id="more-resources">More resources</h2>
+<hr />
+<ol>
+  <li>
+    <p><a href="https://www.markdowntutorial.com/">Markdown Tutorial</a>: An easy-to-follow tutorial for learning markdown.</p>
+  </li>
+  <li>
+    <p><a href="https://jekyllrb.com/docs/installation/">Jekyll Installation</a>: Website features Jekyll installation for a variety of operating systems like macOS, Ubuntu and Windows.</p>
+  </li>
+  <li>
+    <p><a href="https://www.digitalcitizen.life/command-prompt-how-use-basic-commands/">Windows CMD Cheatsheet</a>: Tutorial features common CMD commands useful for following along with this README.</p>
+  </li>
+</ol>
+
+<h2 id="faqs">FAQs</h2>
+<hr />
+<ol>
+  <li>
+    <p>How to terminate the Jekyll site locally?</p>
+
+    <p>Answer: You can terminate your Jekyll site process by pressing Ctrl + C.</p>
+  </li>
+  <li>
+    <p>Why is my website not showing up on the GitHub Pages page?</p>
+
+    <p>Answer: In case you cannot see your website, go to the Actions page on your repo. It should show your website under All workflows wait until the build is complete (a green mark is displayed) and try again.</p>
+  </li>
+</ol>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+
+<p><a href="https://www.amazon.ca/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS">Andrew Etter’s Book</a></p>
+
+<p><a href="https://github.com/sharu725/online-cv">sharu725’s online-cv Theme</a></p>
+
+  </main>
+  <footer>
+    <p>&copy; Arshdeep Singh 2023</p>
+  </footer>
+</body>
+</html>

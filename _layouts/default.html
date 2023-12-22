@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=Oswald:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c73a089fd4.js" crossorigin="anonymous"></script>
+</head>
+<body class="{{ page.title | downcase }}">
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h2>
+          AS&nbsp
+        </h2>
+        <i class="fa-solid fa-file-lines fa-2xl"></i>
+      </div>
+      <ul>
+        <li><a href="{{ "/" | relative_url }}">Resume</a></li>
+        <li><a href="{{ "/how-to" | relative_url }}">How to</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <p>&copy; {{ site.author | default: "Your Name" }} {{ "now" | date: "%Y" }}</p>
+  </footer>
+</body>
+</html>
